@@ -11,7 +11,11 @@ const endpoints = [
 	'endpoints/frontpage'
 ];
 
-const handlers = middlewares.concat(endpoints);
+const errors = [
+	'middlewares/07-error'
+]
+
+const handlers = middlewares.concat(endpoints).concat(errors);
 
 exports.importHandler = require('./lib/import-handler');
 
