@@ -1,7 +1,18 @@
 'use strict';
 
+const join = require('path').join;
+const dirname = require('path').dirname;
+const serverDir = dirname(__dirname);
+const projectRoot = dirname(serverDir);
+const publicDir = join(serverDir, 'public');
+
+const pathToWebPackConf = join(projectRoot, 'webpack.config.dev.js');
+
 module.exports = {
     server: {
+    	dirs: {
+    		public: publicDir
+    	},
         port: 4000
     },
     mongoose: {
@@ -15,8 +26,12 @@ module.exports = {
 			}
 		}
 	},
+	webpack: {
+		path: pathToWebPackConf
+	},
     logger: {
         level: 'debug',
-		colorize: true
+		colorize: true,
+		handleExceptions: true
     }
 }

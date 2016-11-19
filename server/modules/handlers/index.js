@@ -4,11 +4,13 @@ const join = require('path').join;
 
 const middlewares = [
 	'middlewares/00-log-req',
-	'middlewares/01-cors'
+	'middlewares/01-cors',
+	'middlewares/02-webpack',
+	'middlewares/03-serve-static'
 ];
 
 const endpoints = [
-	'endpoints/frontpage'
+	'api/frontpage'
 ];
 
 const errors = [

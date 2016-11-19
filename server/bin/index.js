@@ -6,7 +6,7 @@ const logger = require('modules/logger');
 const app = require('modules/app');
 require('modules/db-connect');
 
-const server = app.listen(conf.server.port, (err) => {
+const server = app.listen(conf.server.port, err => {
 	if(err) {
 		throw err;
 	}
