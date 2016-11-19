@@ -6,7 +6,8 @@ const middlewares = [
 	'middlewares/00-log-req',
 	'middlewares/01-cors',
 	'middlewares/02-webpack',
-	'middlewares/03-serve-static'
+	'middlewares/03-serve-static',
+	'middlewares/04-body-parser'
 ];
 
 const endpoints = [
