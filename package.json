@@ -4,7 +4,7 @@
   "description": "node.js boilerplate",
   "main": "index.js",
   "scripts": {
-    "start:win": "set NODE_PATH=./app&&set NODE_ENV=development&&nodemon"
+    "start:win": "set NODE_PATH=./server&&set NODE_ENV=development&&nodemon server/index"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/pod-proteinom/node_boiler#readme",
   "dependencies": {
     "bluebird": "^3.4.6",
-    "config": "^1.24.0",
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "mongoose": "^4.6.8",
